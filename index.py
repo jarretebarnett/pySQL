@@ -1,17 +1,21 @@
 import mysql.connector
-# from dotenv import load_dotenv
-# import os
+import os
+from os.path import join, dirname
+from dotenv import load_dotenv
 
-# load_dotenv()
+dotenv_path = join(dirname(__file__), '.env')
+load_dotenv(dotenv_path)
 
-# PW = os.getenv("PW")
-# DB = os.getenv("DB")
+HOST = os.environ.get("HOST")
+USER = os.environ.get("USER")
+PW = os.environ.get("PW")
+DB = os.environ.get("DB")
 
 db = mysql.connector.connect(
-    host = 'localhost',
-    user = 'root',
-    password = '',
-    database = 'sakila'
+    host = HOST,
+    user = USER,
+    password = PW,
+    database = DB
 )
 
 mycursor = db.cursor()
