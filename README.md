@@ -13,6 +13,6 @@
 * ###### Install Python 3 (and pip3) through Homebrew – `brew install python` 
 * ###### Download MySQL Connector pip package – `pip install mysql-connector-python`
 * ###### `cd` desired workspace location in directory folder
-* ###### Clone repository ⤬ copy URL from 'Code' button – `git clone <repo URL git address>`
+* ###### Copy URL from 'Code' button ⤬ clone repository – `git clone <repo URL git address>`
 * ###### Run application in local integrated terminal – `python index.py`
 ##### INFORMATION
