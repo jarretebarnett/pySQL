@@ -5,7 +5,7 @@ db = mysql.connector.connect(
     host = h,
     user = u,
     password = pw,
-    database = db
+    database = dbase
 )
 
 mycursor = db.cursor()
@@ -48,7 +48,6 @@ val = [
     (203,'COURTNEY','DOUGLAS','2006-02-15 04:34:33'),
     (204,'TARA','ELAM','2006-02-15 04:34:33')
 ]
-
 mycursor.executemany(sql, val)
 
 # COMMIT INSERTS, DELETES, and UPDATES
